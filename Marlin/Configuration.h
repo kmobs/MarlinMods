@@ -489,9 +489,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 27.71
-  #define DEFAULT_Ki 2.64
-  #define DEFAULT_Kd 72.73
+  #define DEFAULT_Kp 28.28
+  #define DEFAULT_Ki 2.57
+  #define DEFAULT_Kd 77.64
 
 #endif // PIDTEMP
 
@@ -512,7 +512,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -541,9 +541,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define DEFAULT_bedKp 50.71
-  #define DEFAULT_bedKi 9.88
-  #define DEFAULT_bedKd 173.43
+  #define DEFAULT_bedKp 60.48
+  #define DEFAULT_bedKi 10.20
+  #define DEFAULT_bedKd 239.17
 
 #endif // PIDTEMPBED
 
@@ -973,14 +973,14 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 0, -38.50, -0.750 }
+#define NOZZLE_TO_PROBE_OFFSET { -50.4, -8.4, 0}
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
 #define PROBING_MARGIN 10
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 4000
+#define XY_PROBE_SPEED 5000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
